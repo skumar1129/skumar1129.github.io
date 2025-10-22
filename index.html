@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d0d0d;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        #home {
+            text-align: center;
+            padding: 6rem 2rem;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+        }
+
+        #home h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        #home p {
+            max-width: 600px;
+            margin: 1rem auto 2rem;
+        }
+
+        .resume-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-button:hover {
+            background-color: #388E3C;
+        }
+
+        #about {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 3rem;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            transform: scale(1.1);
+            background-color: #4CAF50;
+        }
+
+        #projects {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+        }
+
+        .project-subsection {
+            margin-bottom: 3rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: #222;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #222;
+            border-radius: 8px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 0.5rem;
+            color: #4CAF50;
+        }
+
+        #contact {
+            background-color: #0d0d0d;
+            color: #fff;
+            text-align: center;
+        }
+
+        #contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #0d0d0d;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Hello, I'm Sahil Kumar</h1>
+        <p>A software Engineer with a strong knowledge of developing solutions in the Cloud, Full-Stack Development, Data Engineering, and a well-versed understanding of many different system design architectures. I am certified in all three major cloud providers and have worked with a breadth of technology through professional work and personal projects. Lately I have been specializing in all types of work relating to big data including data architecture, data engineering, and backend engineering. Finally, I am always open to learning new programming languages, technologies, and types of software engineering.</p>
+        <a href="resume.pdf" download class="resume-button">Download Resume</a>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I graduated from Ohio State in 2019 with a bachelors in Computer Science Engineering and a minor in Mathematics. 
+            I started my career in Software Engineering Consulting at Captech Consulting, where I got to work on a variety of tech projects for different fortune 500 clients. 
+            This work included some data analytics and mostly full-stack projects with cloud architecture involved. During this time of working in different software spaces, 
+            I found myself mainly interested in all things data related and system design. 
+            From there, I left for my next employer, Telesign, where I got to dive deeper in those interests by being a Software Engineer with responsibilites in implementing solutions in AWS 
+            for data enginnering and backend projects. I enjoyed working for a tech company and playing a role where I got real ownership into the design, planning, and implementation of new and existing features. 
+            Due to poor financials by the company, my entire team and I (as well as majority of US based engineers) were let go. Afterwards, I went back to Captech to get more experience with data engineering projects, 
+            and had the pleasure of working a lot closer with data scientists on a machine learning project and taking lead on the design and implementation of the inference pipeline. However, I still hope to get back to a role where I can have greater ownership and work on products that excite me.
+
+        </p>
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Captech Consulting</h3>
+            <h4>Senior Consultant May 2025 - Present</h4>
+            <br/>
+            <p>Worked primarily as a data engineer on an incredibly fast paced machine learning project as well as a data engineer for a food service client on a data platform project. 
+                Lead the design and implementation of key components such as live data ingestion, backfilling historical data, and inference pipeline on the machine learning project. 
+                Also, backfilled for a senior engineer on the data platform project where I was onboarded quickly and then took over mentoring a junior engineer on the project.</p>
+            <br/>
+            <ul>
+                <li>As a data engineer for the manufacturing client, worked on a predictive machine learning project for the client where four models were created to predict four different types of failures that could occur with the machinery. The project was completed, from nothing to delivered results, in only three months with less than ideal developer experience due to using a VDI and the company’s lack of tools set up for it. Technologies included Python, SQL, Databricks, Azure, ADX, Cosmos, and Azure Devops suite.</li>
+                <li>As a data engineer for the food service client, worked on key pipelines that would ingest, transform and host data for downstream teams to use. Also assisted with SQL pipelines to deliver certain insights that business analysts on other teams needed. Technologies included Python, SQL, Databricks, AWS, and dBt/dBt Cloud.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Telesign</h3>
+            <h4>Software Engineer June 2022 - March 2025</h4>
+            <br/>
+            <p>Worked primarily as a data engineer and sometimes a backend engineer on Digital Identity products that had a goal of making the internet and technology as a whole a safer place. 
+            Worked to not only implement solutions but design and architect them as well. Also helped with streamlining developer efficiency using custom makefiles to utilize, 
+            documented workflows and pipeline run book, as well as mentoring younger developers and newer team members on best practices and debugging issues in their development process.</p>
+            <br/>
+            <ul>
+                <li>As a leader of features and projects, worked with PMs and different engineering teams to collaborate on requirements for products and dependencies from other teams. Compromised with other teams, drew up architecture diagrams, wrote up user stories, and mapped them out onto a project plan timeline to give upper-management insight into timelines and work that was needed. Technologies included, Jira, DrawIO, Miro, Confluence.</li>
+                <li>As a data engineer, worked on building real-time (100M events/day) and batch data pipelines (up to 1B records per job) that ingested, transformed, enriched, and hashed PII data before loading into either data lakes to be used by downstream ML teams, data warehouses for analytics, or databases to be used in applications. Technologies include Python, Apache Spark, AWS Glue, Batch jobs, Kinesis Data Streams, S3, Lambda, Step functions, Terraform, Redis, Postgres, Snowflake, AWS.</li>
+                <li>As a backend engineer, worked on implementing security (authentication and authorization), building endpoints for querying data from both a database and data warehouse, and supporting asynchronously running background tasks. Technologies include Python, Django, Fast API, SqlAlchemy, Celery, Kubernetes, AWS, Postgres, Okta, Snowflake, Redis, Terraform.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Captech Consulting</h3>
+            <h4>Consultant August 2019 - August 2021</h4>
+            <h4>Senior Consultant August 2021 - June 2022</h4>
+            <br/>
+            <p>Engaged in a variety of team-based client projects utilizing a myriad of tech stacks. Led client meetings on architectural and tactical discussions of the products. 
+            Served as a technology lead on certain cases, teaching team members new technologies and taking ownership of the major development features of the platforms.
+            Helped mentor some of the less experienced developers on the projects. In addition, served as a manager internally to a younger employee involving career development guidance, 
+            facilitating feedback received, and conducting mid-year/year-end reviews.</p>
+            <br/>
+            <ul>
+                <li>Worked as a backend engineer for a financial  tech company on their debit card mobile application. The application was written in Typescript Node Js and deployed on Kubernetes in GCP. Used GKE, Typescript, Javascript, Postgres Cloud SQL, Prometheus, Grafana, Jenkins, Unit tests, and Integration tests.</li>
+                <li>Created live data feeds from data hosted in an Azure SQL database and streamlined the Microsoft suite processes using Advanced SQL scripting and Sharepoint web parts coded in React.</li>
+                <li>Worked as a full-stack developer for a major financial institution utilizing a server-less micro-service architecture incorporated with an advanced DevOps practice. Used AWS, Vue, NodeJS, Spring Boot, Docker, Python, and Jenkins.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>Technologies & Frameworks</h1>
+        <h2>Technologies</h2>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>C++</li>
+            <li>Rust</li>
+            <li>HTML/CSS</li>
+        </ul>
+        <h2>Frameworks</h2>
+        <ul class="skills-list">
+            <li>Apache Spark</li>
+            <li>Fast API</li>
+            <li>Flask</li>
+            <li>Django</li>
+            <li>Terraform</li>
+            <li>Kubernetes</li>
+            <li>Node.js</li>
+            <li>Spring Boot</li>
+            <li>.NET Core</li>
+            <li>dBt/dBt Cloud</li>
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GCP</li>
+            <li>Postgres</li>
+            <li>Databricks</li>
+            <li>Snowflake</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Vue.js</li>
+            <li>Flutter</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>Samples Projects</h1>
+        
+        <div class="project-subsection" id="full-stack-projects">
+            <h2>Full Stack Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <h3>Project 1: Barz Bro</h3>
+                    <p>A full-stack web and mobile application that works as social media plaform to post about bars/night life in your city. Backend hosted in AWS and utilizes DynamoDB as datastore so just has basic functions like making posts and filtering based on city.</p>
+                    <a href="https://github.com/orgs/BarzBro/repositories" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: Pubcoasters</h3>
+                    <p>An application that functions the same as BarzBro but uses GCP as the cloud provider and a relational database to allow for more features to be have been developed. Example new features: Likes, Comments, Followers/Following.</p>
+                    <a href="https://github.com/orgs/PubCoasters/repositories" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3: Fantasy Football Predictor</h3>
+                    <p>Developed a program to predict a fantasy football player’s output for the season based on statistics collected from players’ previous seasons. Project utilizes managed services from GCP.</p>
+                    <a href="https://github.com/skumar1129/FantasyFootballPredictor" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-subsection" id="low-level-projects">
+            <h2>Low Level Language Coding Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <h3>Project 1: Low Level Projects</h3>
+                    <p>A collection of projects focused on operating system (OS) concepts, implemented using low-level languages such as C++ and Rust.</p>
+                    <a href="https://github.com/skumar1129/LowLevelProjects" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: Chat Room Application</h3>
+                    <p>A simple chat room web application implemented in low level languages C++ and Rust.</p>
+                    <a href="https://github.com/skumar1129/ChatRoom" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3: Ticket Booking System</h3>
+                    <p>A simple ticket booking system application implemented in low level languages: C++ and Rust.</p>
+                    <a href="https://github.com/skumar1129/TicketBookingSystem" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-subsection" id="misc-projects">
+            <h2>Miscellaneous Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <h3>Project 1: Text Summarizer</h3>
+                    <p>A FastAPI service that has one endpoint that takes in a large amount of text and returns a summarization of the text. Uses SpaCy and TFIDF algorithm to summarize text.</p>
+                    <a href="https://github.com/skumar1129/text_summarizer" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: URL Shortener and Counter Service</h3>
+                    <p>A basic service that shortens a URL and counts the number of times that URL is visted. Code was created using the assistance of AI coding tools.</p>
+                    <a href="https://github.com/skumar1129/ai-http-server" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3: Sync Operations</h3>
+                    <p>FastAPI application that has an endpoint that takes in args for an earlier and later date and gives instructions on how to sync between the data between the two dates.</p>
+                    <a href="https://github.com/skumar1129/sync_operations" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Information</h1>
+        <p>Email: <a href="mailto:sahilkumar1129@gmail.com">sahilkumar1129@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sahil-k-98148a106/" target="_blank">linkedin.com/in/sahil-k-98148a106</a></p>
+        <p>GitHub: <a href="https://github.com/skumar1129" target="_blank">github.com/skumar1129</a></p>
+        <p>Phone: (773) 354-3250</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sahil Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
